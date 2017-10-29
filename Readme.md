@@ -21,6 +21,10 @@ si vous utilisez docker:
 ```bash
 docker-compose up
 ```
+il faudra également ajouter dans le fichier .env
+```
+EXPOSED_PORT=3333
+```
 
 l'application est désormais disponible sur [localhost:3333](http://localhost:3333)
 

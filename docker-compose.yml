@@ -10,5 +10,5 @@ services:
     volumes:
       - ./:/home/node/app
     ports:
-      - "3333:3333"
+      - "${EXPOSED_PORT}:3333"
     command: /home/node/app/start.sh
