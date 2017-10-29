@@ -3,12 +3,23 @@
     "axios": "^0.17.0",
     "dotenv": "^4.0.0",
     "express": "^4.16.2",
-    "form-data": "^2.3.1"
+    "form-data": "^2.3.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.3.0",
+    "prettier": "^1.7.4"
   },
   "devDependencies": {
     "nodemon": "^1.12.1"
   },
   "scripts": {
-    "start": "node_modules/.bin/nodemon index.js"
+    "start": "node_modules/.bin/nodemon index.js",
+    "format": "prettier --trailing-comma es5 --single-quote --write index.js",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --trailing-comma es5 --single-quote --write",
+      "git add"
+    ]
   }
 }
