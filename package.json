@@ -9,7 +9,6 @@
     "nodemon": "^1.12.1"
   },
   "scripts": {
-    "start": "node_modules/.bin/nodemon index.js",
-    "start-prod": "node index.js"
+    "start": "node_modules/.bin/nodemon index.js"
   }
 }

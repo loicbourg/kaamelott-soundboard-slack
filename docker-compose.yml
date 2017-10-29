@@ -9,6 +9,6 @@ services:
       - NODE_ENV=production
     volumes:
       - ./:/home/node/app
-    expose:
-      - "3333"
-    command: "npm run start-prod"
+    ports:
+      - "3333:3333"
+    command: /home/node/app/start.sh
