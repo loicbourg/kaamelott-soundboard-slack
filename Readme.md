@@ -34,6 +34,7 @@ Il faudra également ajouter dans un fichier `.env`, à la racine :
 EXPOSED_PORT=3333
 ```
 
+
 ## Configuration
 
 1. [Créer une application Slack](https://api.slack.com/apps?new_app=1),
@@ -52,3 +53,6 @@ EXPOSED_PORT=3333
 ```
 SLACK_TOKEN=YOUR_SLACK_TOKEN
 ```
+
+
+Si vous voulez tester le fonctionnement de l'application en local, l'utilisation de [ngrok](https://ngrok.com/) est conseillée pour recevoir les webhhok de slack
